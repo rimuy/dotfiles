@@ -17,7 +17,7 @@ My Void Linux i3 desktop configuration.
 * [polybar](https://github.com/polybar/polybar) - Custom top bar
 * [compton](https://github.com/chjj/compton) - Compositor for X11
 * [dmenu](https://tools.suckless.org/dmenu/)
-*
+
 ## Optional
 * [node.js](https://github.com/nodejs/node) - JavaScript runtime (You must enable the "nodejs" polybar module)
 * [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) - Text Editor
