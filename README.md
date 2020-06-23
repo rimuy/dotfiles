@@ -16,8 +16,8 @@ My Void Linux i3 desktop configuration.
 * [i3-gaps](https://github.com/Airblader/i3) - i3wm fork with gaps
 * [polybar](https://github.com/polybar/polybar) - Custom top bar
 * [compton](https://github.com/chjj/compton) - Compositor for X11
-* [rofi](https://github.com/davatorium/rofi) - Window switcher (Can be replaced with [dmenu](https://tools.suckless.org/dmenu/), change your i3 config file in order to get it working.)
-
+* [dmenu](https://tools.suckless.org/dmenu/)
+*
 ## Optional
 * [node.js](https://github.com/nodejs/node) - JavaScript runtime (You must enable the "nodejs" polybar module)
 * [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) - Text Editor
