@@ -11,6 +11,8 @@
 !.vim_runtime/
 !README.md
 
+!.config/
+.config/*
 !.config/dmenu/
 !.config/gtk-3.0/
 !.config/i3/
