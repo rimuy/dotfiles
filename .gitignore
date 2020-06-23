@@ -6,17 +6,15 @@
 !.vimrc
 !.Xresources
 !.gtkrc-2.0
-!.assets/
-!.vim/
-!.vim_runtime/
+!.assets/*
+!.vim/*
+!.vim_runtime/*
 !README.md
-!LICENSE
 
-.config/*
-!.config/dmenu/
-!.config/gtk-3.0/
-!.config/i3/
-!.config/htop/
-!.config/neofetch/
-!.config/polybar/
+!.config/dmenu/*
+!.config/gtk-3.0/*
+!.config/i3/*
+!.config/htop/*
+!.config/neofetch/*
+!.config/polybar/*
 
