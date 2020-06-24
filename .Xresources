@@ -1,12 +1,12 @@
+st.background: #222222
+st.foreground: #fefefe
+
+!st.alpha:      0.6
+
 URxvt.font:xft:Hack\ Nerd\ Font\ Mono:style=Bold:pixelsize=14
 URxvt*background: [85]#222222
 URxvt*foreground: #fefefe
 URxvt*depth: 32
-
-kitty.font: URxvt.font
-kitty*background: [85]#222222
-
-!*.alpha: 0.8
 
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
@@ -46,7 +46,7 @@ URxvt.keysym.Control-Left: \033[1;5D
 *.cursorColor: #00b8d4
 
 ! black
-*.color0: [85]#222222
+*.color0: #222222
 *.color8: #fefefe
 
 ! red

@@ -1,5 +1,7 @@
 /*
 
+# Rice
+
 !.gitignore
 !.gitmodules
 !.xinitrc
@@ -16,6 +18,10 @@
 .config/*
 !.config/dwm/
 .config/dwm/config.h
+.config/dwm/patches/*
+!.config/dmenu/
+.config/dmenu/config.h
+.config/dmenu/patches/*
 !.config/fish/
 !.config/gtk-3.0/
 !.config/i3/
@@ -24,3 +30,4 @@
 !.config/polybar/
 !.config/st/
 .config/st/config.h
+.config/st/patches/*
