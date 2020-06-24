@@ -2,6 +2,9 @@
 setxkbmap -layout us -variant intl
 
 xrdb -load ~/.Xresources
-sh ~/.config/polybar/launch.sh &
+picom -b
+#sh ~/.config/polybar/launch.sh &
+exec --no-startup-id feh --bg-fill --randomize ~/.config/wallpapers/* &
 
-exec i3
+#exec i3
+exec dwm

@@ -1,6 +1,7 @@
 /*
 
 !.gitignore
+!.gitmodules
 !.xinitrc
 !.bashrc
 !.vimrc
@@ -13,11 +14,13 @@
 
 !.config/
 .config/*
-!.config/dmenu/
+!.config/dwm/
+.config/dwm/config.h
 !.config/fish/
 !.config/gtk-3.0/
 !.config/i3/
 !.config/htop/
 !.config/neofetch/
 !.config/polybar/
-
+!.config/st/
+.config/st/config.h
