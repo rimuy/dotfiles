@@ -4,3 +4,6 @@
 [submodule ".config/st"]
 	path = .config/st
 	url = https://github.com/Kevinwkz/st
+[submodule ".vim-runtime"]
+	path = .vim-runtime
+	url = https://github.com/Kevinwkz/vim-runtime.git
