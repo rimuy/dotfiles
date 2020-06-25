@@ -12,5 +12,5 @@ endtry
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
-Plug 'vbe0201/vimdiscord'
+"Plug 'vbe0201/vimdiscord'
 call plug#end()
