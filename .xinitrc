@@ -1,6 +1,8 @@
 #!/bin/sh
 setxkbmap -layout us -variant intl
 
+source ~/.fishrc
+
 xrdb -load ~/.Xresources
 picom -b
 #sh ~/.config/polybar/launch.sh &
