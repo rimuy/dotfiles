@@ -6,6 +6,7 @@
 !.gitmodules
 !.xinitrc
 !.bashrc
+!.fishrc
 !.vimrc
 !.Xresources
 !.gtkrc-2.0
