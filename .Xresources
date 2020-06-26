@@ -1,7 +1,7 @@
 !! Suckless software
 st.background:      #222222
 st.foreground:      #fefefe
-st.alpha:           0.6
+st.alpha:           1
 
 dwm.borderpx:       3
 dwm.gappx:          50
