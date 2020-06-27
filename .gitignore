@@ -1,10 +1,11 @@
-# Ignore everything with exceptions
+# Ignore everything in this directory, with exceptions
 /*
 
 # Filter desktop files
 
 !.gitignore
 !.gitmodules
+!README.md
 !.autostart.sh
 !.xinitrc
 !.vimrc
@@ -14,8 +15,14 @@
 !.assets/
 !.readme_images/
 !.vim/
-!.vim-runtime/
-!README.md
+
+# Filter Local files
+!.local/
+.local/*
+!.local/bin/
+!.local/share/
+.local/share/*
+!.local/share/applications/
 
 # Ignore plugin folders already created
 .vim/plugged/*
