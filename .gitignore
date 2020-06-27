@@ -2,7 +2,6 @@
 /*
 
 # Filter desktop files
-
 !.gitignore
 !.gitmodules
 !README.md
