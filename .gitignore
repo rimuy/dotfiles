@@ -1,6 +1,7 @@
+# Ignore everything with exceptions
 /*
 
-# Rice
+# Filter desktop files
 
 !.gitignore
 !.gitmodules
@@ -13,6 +14,10 @@
 !.vim-runtime/
 !README.md
 
+# Ignore plugin folders already created
+.vim/plugged/*
+
+# Filter configuration
 !.config/
 .config/*
 !.config/Xresources
@@ -35,3 +40,4 @@
 !.config/st/
 .config/st/config.h
 .config/st/patches/*
+
