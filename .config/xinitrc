@@ -1,9 +1,8 @@
 #!/bin/sh
-source ~/.config/fish/fishrc
+source ~/.config/fish/fishrc # Load fish configs
 
-#sh ~/.config/polybar/launch.sh &
 sh ~/.config/autostart.sh &
-feh --bg-fill --randomize ~/.config/wallpapers/* &
+feh --bg-fill --randomize ~/.config/wallpapers/* & # Wallpapers
 
 #exec i3
 exec dwm
