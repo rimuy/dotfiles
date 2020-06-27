@@ -85,5 +85,5 @@ URxvt.keysym.Control-Left:  \033[1;5D
 *.color14:      #4dd0e1
 
 ! white
-*.color7:       #bfbaac
-*.color15:      #fdf6e3
+*.color7:       #E0E0E0
+*.color15:      #EEEEEE
