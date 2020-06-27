@@ -23,6 +23,9 @@
 !.local/share/
 .local/share/*
 !.local/share/applications/
+!.local/share/wallpapers/
+.local/share/wallpapers/*
+!.local/share/wallpapers/Other/
 
 # Ignore plugin folders already created
 .vim/plugged/*
