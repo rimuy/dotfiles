@@ -6,10 +6,7 @@
 !.gitmodules
 !.autostart.sh
 !.xinitrc
-!.fishrc
 !.vimrc
-!.Xresources
-!.gtkrc-2.0
 !.assets/
 !.vim/
 !.vim-runtime/
@@ -17,9 +14,10 @@
 
 !.config/
 .config/*
-!Xresources
-!xinitrc
-!autostart.sh
+!.config/Xresources
+!.config/xinitrc
+!.config/autostart.sh
+!.config/user-dirs.dirs
 !.config/dwm/
 .config/dwm/config.h
 .config/dwm/patches/*
