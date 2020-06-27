@@ -1,8 +1,8 @@
 #!/bin/sh
-source ~/.config/fish/fishrc # Load fish configs
+# All configurations will be sourced in .xprofile
 
-sh ~/.config/autostart.sh &
-feh --bg-fill --randomize ~/.config/wallpapers/* & # Wallpapers
+. ~/.xprofile
 
-#exec i3
-exec dwm
+
+# ssh-agent i3
+ssh-agent dwm

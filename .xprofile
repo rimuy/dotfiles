@@ -1,0 +1,13 @@
+#!bin/sh
+
+mpd &
+xcompmgr &
+dunst &
+unclutter &
+xrdb -load ~/.config/Xresources &
+setxkbmap -layout us -variant intl &
+xset r rate 300 50 &
+sh ~/.config/autostart.sh &
+feh --bg-fill --randomize ~/.config/wallpapers/* & # For Wallpapers
+
+source ~/.config/fish/fishrc # Load fishrc
