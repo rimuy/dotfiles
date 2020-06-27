@@ -8,6 +8,9 @@
 !.autostart.sh
 !.xinitrc
 !.vimrc
+!.profile
+!.xprofile
+!.zprofile
 !.assets/
 !.readme_images/
 !.vim/
