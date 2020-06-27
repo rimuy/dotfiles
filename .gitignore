@@ -6,7 +6,6 @@
 !.gitmodules
 !.autostart.sh
 !.xinitrc
-!.bashrc
 !.fishrc
 !.vimrc
 !.Xresources
