@@ -8,7 +8,6 @@
 !README.md
 !.autostart.sh
 !.xinitrc
-!.vimrc
 !.profile
 !.xprofile
 !.zprofile
@@ -19,6 +18,7 @@
 # Filter Local files
 !.local/
 .local/*
+
 !.local/bin/
 !.local/share/
 .local/share/*
@@ -33,16 +33,28 @@
 # Filter configuration
 !.config/
 .config/*
+
 !.config/Xresources
 !.config/xinitrc
 !.config/autostart.sh
 !.config/user-dirs.dirs
+
+!.config/vim/
+.config/vim/*
+!.config/vim/vimrc
+
 !.config/dwm/
 .config/dwm/config.h
 .config/dwm/patches/*
+
 !.config/dmenu/
 .config/dmenu/config.h
 .config/dmenu/patches/*
+
+!.config/st/
+.config/st/config.h
+.config/st/patches/*
+
 !.config/fish/
 !.config/gtk-2.0/
 !.config/gtk-3.0/
@@ -50,7 +62,4 @@
 !.config/htop/
 !.config/neofetch/
 !.config/polybar/
-!.config/st/
-.config/st/config.h
-.config/st/patches/*
 
