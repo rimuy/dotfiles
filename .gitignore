@@ -4,6 +4,7 @@
 
 !.gitignore
 !.gitmodules
+!.autostart.sh
 !.xinitrc
 !.bashrc
 !.fishrc
