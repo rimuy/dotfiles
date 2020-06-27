@@ -17,6 +17,9 @@
 
 !.config/
 .config/*
+!Xresources
+!xinitrc
+!autostart.sh
 !.config/dwm/
 .config/dwm/config.h
 .config/dwm/patches/*
@@ -24,6 +27,7 @@
 .config/dmenu/config.h
 .config/dmenu/patches/*
 !.config/fish/
+!.config/gtk-2.0/
 !.config/gtk-3.0/
 !.config/i3/
 !.config/htop/
