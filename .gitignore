@@ -48,7 +48,7 @@
 .config/st/patches/*
 
 !.config/vim/
-.config/vim/temp_dirs/
+.config/vim/runtime/temp_dirs/
 
 !.config/github/
 !.config/fish/
