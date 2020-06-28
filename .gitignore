@@ -38,6 +38,8 @@
 !.config/dwm/
 .config/dwm/config.h
 .config/dwm/patches/*
+.config/dwm/.git/
+.config/dwm/*.git*
 
 !.config/dmenu/
 .config/dmenu/config.h
