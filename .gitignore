@@ -38,8 +38,6 @@
 !.config/user-dirs.dirs
 
 !.config/vim/
-.config/vim/*
-!.config/vim/vimrc
 
 !.config/dwm/
 .config/dwm/config.h
