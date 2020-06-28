@@ -47,8 +47,10 @@
 .config/st/config.h
 .config/st/patches/*
 
-!.config/github/
 !.config/vim/
+.config/vim/temp_dirs/*
+
+!.config/github/
 !.config/fish/
 !.config/dunst/
 !.config/gtk-2.0/
