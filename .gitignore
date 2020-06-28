@@ -9,10 +9,10 @@
 !.profile
 !.xprofile
 !.zprofile
-!.assets/
+
 !.vim/
 .vim/*
-!.vim/autoload/
+!.vim/colors/
 
 ## Filter Local files
 !.local/
