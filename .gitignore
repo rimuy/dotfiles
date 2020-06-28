@@ -11,7 +11,6 @@
 !.xprofile
 !.zprofile
 !.assets/
-!.readme_images/
 !.vim/
 .vim/*
 !.vim/autoload/
@@ -37,8 +36,6 @@
 !.config/autostart.sh
 !.config/user-dirs.dirs
 
-!.config/vim/
-
 !.config/dwm/
 .config/dwm/config.h
 .config/dwm/patches/*
@@ -51,6 +48,8 @@
 .config/st/config.h
 .config/st/patches/*
 
+!.config/github/
+!.config/vim/
 !.config/fish/
 !.config/gtk-2.0/
 !.config/gtk-3.0/
