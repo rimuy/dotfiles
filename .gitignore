@@ -59,3 +59,7 @@
 !.config/neofetch/
 !.config/polybar/
 
+# Ignore these extensions in directories inside this directory
+.config/**/config.h
+.config/**/*.orig
+.config/**/*.rej
