@@ -2,7 +2,7 @@
 My Void Linux i3 desktop configuration.
 
 ## Desktop
-![Desktop](/.readme_images/rice.png)
+![Desktop](/.config/github/rice.png)
 
 #### Programs:
 * [neofetch](https://github.com/dylanaraps/neofetch)
