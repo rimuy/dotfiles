@@ -4,6 +4,3 @@
 [submodule ".config/st"]
 	path = .config/st
 	url = https://github.com/Kevinwkz/st
-[submodule ".config/dmenu"]
-	path = .config/dmenu
-	url = https://github.com/Kevinwkz/dmenu.git
