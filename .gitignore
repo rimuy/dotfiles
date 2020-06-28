@@ -38,7 +38,6 @@
 !.config/dwm/
 .config/dwm/config.h
 .config/dwm/patches/*
-.config/dwm/.git/
 .config/dwm/*.git*
 
 !.config/dmenu/
@@ -48,6 +47,7 @@
 !.config/st/
 .config/st/config.h
 .config/st/patches/*
+.config/st/*.git*
 
 !.config/vim/
 .config/vim/runtime/temp_dirs/
@@ -60,7 +60,9 @@
 !.config/htop/
 !.config/neofetch/
 
-# Ignore these extensions in directories inside this directory
+# Ignore these extensions in directories inside this directory [Suckless software]
 .config/**/config.h
+.config/**/*.o
 .config/**/*.orig
 .config/**/*.rej
+
