@@ -13,6 +13,8 @@
 !.assets/
 !.readme_images/
 !.vim/
+.vim/*
+!.vim/autoload/
 
 # Filter Local files
 !.local/
@@ -25,9 +27,6 @@
 !.local/share/wallpapers/
 .local/share/wallpapers/*
 !.local/share/wallpapers/Other/
-
-# Ignore plugin folders already created
-.vim/plugged/*
 
 # Filter configuration
 !.config/
