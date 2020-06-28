@@ -6,7 +6,6 @@
 !.gitmodules
 !README.md
 !.autostart.sh
-!.xinitrc
 !.profile
 !.xprofile
 !.zprofile
@@ -51,12 +50,11 @@
 !.config/github/
 !.config/vim/
 !.config/fish/
+!.config/dunst/
 !.config/gtk-2.0/
 !.config/gtk-3.0/
-!.config/i3/
 !.config/htop/
 !.config/neofetch/
-!.config/polybar/
 
 # Ignore these extensions in directories inside this directory
 .config/**/config.h
