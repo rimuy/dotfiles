@@ -1,7 +1,7 @@
-# Ignore everything in this directory, with exceptions
+## Ignore everything in this directory, with exceptions
 /*
 
-# Filter desktop files
+## Filter desktop files
 !.gitignore
 !.gitmodules
 !README.md
@@ -14,7 +14,7 @@
 .vim/*
 !.vim/autoload/
 
-# Filter Local files
+## Filter Local files
 !.local/
 .local/*
 
@@ -26,14 +26,9 @@
 .local/share/wallpapers/*
 !.local/share/wallpapers/Other/
 
-# Filter configuration
+## Filter config directories and some files in it
 !.config/
 .config/*
-
-!.config/Xresources
-!.config/xinitrc
-!.config/autostart.sh
-!.config/user-dirs.dirs
 
 !.config/dwm/
 .config/dwm/config.h
@@ -52,15 +47,21 @@
 !.config/vim/
 .config/vim/runtime/temp_dirs/
 
+## Fully filter config directories
 !.config/github/
 !.config/fish/
 !.config/dunst/
 !.config/gtk-2.0/
 !.config/gtk-3.0/
-!.config/htop/
 !.config/neofetch/
 
-# Ignore these extensions in directories inside this directory [Suckless software]
+## Filter config files
+!.config/Xresources
+!.config/xinitrc
+!.config/autostart.sh
+!.config/user-dirs.dirs
+
+## Ignore these extensions in directories inside this directory [Suckless software]
 .config/**/config.h
 .config/**/*.o
 .config/**/*.orig
