@@ -65,6 +65,13 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-h", "24", "-l", "10", "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 
+/* Custom dmenu bindings */
+
+
+/* Third Party Softwares */
+static const char *flameshot[] = { "flameshot", "gui", NULL };
+/**/
+
 ResourcePref resources [] = {
     { "normbgcolor",            STRING,  &normbgcolor },
     { "normbordercolor",        STRING,  &normbordercolor },
@@ -124,7 +131,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
+	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} },
+    /* THIRD PARTY SOFTWARES */
+    { MODKEY,                       XK_s,      spawn,          {.v = flameshot} },
 };
 
 /* button definitions */
