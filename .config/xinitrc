@@ -4,5 +4,5 @@
 . ~/.xprofile
 
 
-# ssh-agent i3
-exec dwm
+#exec dbus-launch i3
+exec dbus-launch dwm
