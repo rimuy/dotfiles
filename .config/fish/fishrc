@@ -3,8 +3,8 @@
 set -x EDITOR 'vim -f'
 set -x BROWSER 'firefox'
 
-alias sudo='sudo'
-alias ls='ls --color -I LICENSE -I COPYING -I README.md'
+alias sudo='sudo '
+alias ls='ls --color -I LICENSE -I COPYING -I README*'
 
 alias xbps-i='xbps-install'
 alias xbps-r='xbps-remove'
