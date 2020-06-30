@@ -12,14 +12,19 @@ static const char dmenufont[]        =  "monospace:size=10";
 static const char terminalfont[]     =  "monospace:style=Bold:size=10";
 static char normbgcolor[]            =  "#222222";
 static char normbordercolor[]        =  "#444444";
-static char normfgcolor[]            =  "#bbbbbb";
-static char selfgcolor[]             =  "#eeeeee";
+static char normfgcolor[]            =  "#cbcbcb";
+static char selfgcolor[]             =  "#fefefe";
 static char selbordercolor[]         =  "#005577";
-static char selbgcolor[]             =  "#005577";
+static char selbgcolor[]             =  "#0076a5";
 static char *colors[][4] = {
     /*               fg           bg           border,          float   */
     [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor, normbordercolor },
     [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor,  selbgcolor },
+    [SchemeStatus]  = { normbgcolor, normbgcolor,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+    [SchemeTagsSel]  = { selfgcolor, "#555555",  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+    [SchemeTagsNorm]  = { normfgcolor, normbgcolor,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+    [SchemeInfoSel]  = { selfgcolor, selbgcolor,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+    [SchemeInfoNorm]  = { normfgcolor, normbgcolor,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
 /* tagging */
