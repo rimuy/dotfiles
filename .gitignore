@@ -23,6 +23,7 @@
 .local/share/*
 !.local/share/applications/
 !.local/share/wallpapers/
+!.local/share/rice/
 .local/share/wallpapers/*
 !.local/share/wallpapers/Other/
 
