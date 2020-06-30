@@ -7,9 +7,9 @@ static unsigned int snap             =  32;       /* snap pixel */
 static int showbar                   =  1;        /* 0 means no bar */
 static int topbar                    =  1;        /* 0 means bottom bar */
 static int user_bh                   =  24;       /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]           =  { "Hack Nerd Font Mono:style=Regular:size=10" };
+static const char *fonts[]           =  { "monospace:size=10", "JoyPixels:pixelsize=12", "Hack Nerd Font Mono:style=Regular:size=16" };
 static const char dmenufont[]        =  "monospace:size=10";
-static const char terminalfont[]     =  "Hack Nerd Font Mono:style=Bold:size=11";
+static const char terminalfont[]     =  "monospace:style=Bold:size=10";
 static char normbgcolor[]            =  "#222222";
 static char normbordercolor[]        =  "#444444";
 static char normfgcolor[]            =  "#bbbbbb";
