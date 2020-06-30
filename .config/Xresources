@@ -1,18 +1,18 @@
 !! Suckless software
 st.background:      #222222
-st.foreground:      #fefefe
+st.foreground:      #FFECB3
 *.alpha:           0.9
 
 dwm.borderpx:       3
 dwm.gappx:          50
-dwm.normbgcolor:    #111111
-dwm.normfgcolor:    #CFCFCF
-dwm.selbgcolor:     #1565C0
-dwm.selfgcolor:     #FEFEFE
+!dwm.normbgcolor:    #111111
+!dwm.normfgcolor:    #CFCFCF
+!dwm.selbgcolor:     #1565C0
+!dwm.selfgcolor:     #FEFEFE
 dwm.selbordercolor: #1565C0
 
 !! URxvt
-URxvt.font:         xft:Hack\ Nerd\ Font\ Mono:style=Bold:pixelsize=16
+URxvt.font:         xft:monospace:style=Bold:pixelsize=16
 URxvt*background:   [85]#222222
 ! URxvt*foreground: #fefefe
 URxvt*foreground:   #FFECB3
