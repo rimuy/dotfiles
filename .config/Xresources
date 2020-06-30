@@ -1,7 +1,7 @@
 !! Suckless software
 st.background:      #222222
 st.foreground:      #fefefe
-st.alpha:           1
+*.alpha:           0.9
 
 dwm.borderpx:       3
 dwm.gappx:          50
@@ -10,7 +10,6 @@ dwm.normfgcolor:    #CFCFCF
 dwm.selbgcolor:     #1565C0
 dwm.selfgcolor:     #FEFEFE
 dwm.selbordercolor: #1565C0
-dmenu.font:         xft:Hack\ Nerd\ Font\ Mono:style=Regular:pixelsize=12
 
 !! URxvt
 URxvt.font:         xft:Hack\ Nerd\ Font\ Mono:style=Bold:pixelsize=16
