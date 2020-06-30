@@ -47,12 +47,15 @@
 !.config/vim/
 .config/vim/runtime/temp_dirs/
 
+!.config/gtk-3.0/
+.config/gtk-3.0/*
+!.config/gtk-3.0/settings.ini
+
 ## Fully filter config directories
 !.config/github/
 !.config/fish/
 !.config/dunst/
 !.config/gtk-2.0/
-!.config/gtk-3.0/
 !.config/neofetch/
 
 ## Filter config files
