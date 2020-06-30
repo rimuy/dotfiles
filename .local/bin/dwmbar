@@ -4,8 +4,8 @@
 separator='|'
 
 dt() {
-    local d=$( date +'%F %R' )
-    echo '🕓' $d
+    local d=$( date +' %A, %m/%d/%Y 🕓 %l:%M %p' )
+    echo '📅' $d
 }
 
 ethernet() {
@@ -15,6 +15,21 @@ ethernet() {
     else
         echo '❌'
     fi
+}
+
+volume(){
+    local vol=$( pactl list sinks |grep '^[[:space:]]Volume:' |head -n $(( $SINK + 1 )) |tail -n 1 |sed -e 's,.* \([0-9][0-9]*\)%.*,\1,' )
+    if [[ "$vol" -gt 100 ]]; then
+        echo -n '🔊'
+    elif [[ "$vol" -ge 50 ]]; then
+        echo -n '🔉'
+    elif [[ "$vol" -ge 1 ]]; then
+        echo -n '🔈'
+    else
+        echo -n '🔇'
+    fi
+
+    echo -n ' '$vol
 }
 
 cpu() {
@@ -40,7 +55,7 @@ updates() {
 }
 
 while : ; do
-    xsetroot -name "$(updates) $separator $(packages) $separator $(ram) $separator $(cpu) $separator $(ethernet) $separator $(dt)"
-    sleep 1m
+    xsetroot -name "$(updates) $separator $(packages) $separator $(ram) $separator $(cpu) $separator $(volume) $separator $(ethernet) $separator $(dt)"
+    sleep 1
 done
 
