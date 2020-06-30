@@ -1,6 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 
-while : ; do
-    xsetroot -name "$( date +"%F %R"  )"
-    sleep 1
-done &
+. ~/.local/bin/dwmbar &

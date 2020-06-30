@@ -1,0 +1,46 @@
+#!/bin/sh
+# This script will run with autostart.sh
+
+separator='|'
+
+dt() {
+    local d=$( date +'%F %R' )
+    echo '🕓' $d
+}
+
+ethernet() {
+    local e=$( cat /sys/class/net/*1/operstate )
+    if [[ "$e" == 'up' ]]; then
+        echo '📶'
+    else
+        echo '❌'
+    fi
+}
+
+cpu() {
+    local usage=$( grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage }' )
+    echo '🖥️' CPU: $( printf "%.2f\n" $usage )%
+}
+
+ram() {
+    local used=$( free -m |awk 'NR==2{ print $3 }' )
+    local total=$( free -m |awk 'NR==2{ print $2 }' )
+    local usage=$((200 * $used/$total - 100 * $used/$total ))%
+    echo '🧠' Mem: $usage
+}
+
+packages(){
+    local pkgs=$( pacman -Q | wc -l )
+    echo '📦' $pkgs
+}
+
+updates() {
+    local upds=$( pacman -Qu | wc -l )
+    echo '📥' $upds
+}
+
+while : ; do
+    xsetroot -name "$(updates) $separator $(packages) $separator $(ram) $separator $(cpu) $separator $(ethernet) $separator $(dt)"
+    sleep 1m
+done
+
