@@ -140,7 +140,8 @@ static Key keys[] = {
     { MODKEY|ControlMask,           XK_u,      spawn,          SHCMD(". ~/.local/bin/dmenuumount") },
     { MODKEY|ControlMask,           XK_p,      spawn,          SHCMD(". ~/.local/bin/dmenupower") },
     /* THIRD PARTY SOFTWARES */
-    { MODKEY,                       XK_s,      spawn,          {.v = flameshot} },
+    { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = flameshot} },
+    { MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l dimblur") },
 };
 
 /* button definitions */
