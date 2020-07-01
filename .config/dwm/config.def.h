@@ -14,8 +14,8 @@ static char normbgcolor[]            =  "#222222";
 static char normbordercolor[]        =  "#444444";
 static char normfgcolor[]            =  "#cbcbcb";
 static char selfgcolor[]             =  "#fefefe";
-static char selbordercolor[]         =  "#005577";
-static char selbgcolor[]             =  "#0076a5";
+static char selbgcolor[]             =  "#0088cc";
+static char selbordercolor[]         =  "#0088cc";
 static char *colors[][4] = {
     /*               fg           bg           border,          float   */
     [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor, normbordercolor },
@@ -138,6 +138,7 @@ static Key keys[] = {
     { MODKEY,                       XK_x,      spawn,          SHCMD(". ~/.local/bin/dmenuemoji") },
     { MODKEY|ControlMask,           XK_m,      spawn,          SHCMD(". ~/.local/bin/dmenumount") },
     { MODKEY|ControlMask,           XK_u,      spawn,          SHCMD(". ~/.local/bin/dmenuumount") },
+    { MODKEY|ControlMask,           XK_p,      spawn,          SHCMD(". ~/.local/bin/dmenupower") },
     /* THIRD PARTY SOFTWARES */
     { MODKEY,                       XK_s,      spawn,          {.v = flameshot} },
 };

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ls ~/.local/bin/power/ |dmenu -p 'Power menu'|source
+
