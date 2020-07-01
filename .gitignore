@@ -25,7 +25,7 @@
 !.local/share/wallpapers/
 !.local/share/rice/
 .local/share/wallpapers/*
-!.local/share/wallpapers/Other/
+!.local/share/wallpapers/lockscreen/
 
 ## Filter config directories and some files in it
 !.config/
