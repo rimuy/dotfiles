@@ -5,7 +5,7 @@
 !.gitignore
 !.gitmodules
 !README.md
-!.autostart.sh
+!.zshrc
 !.profile
 !.xprofile
 !.zprofile
