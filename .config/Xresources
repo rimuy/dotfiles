@@ -9,7 +9,7 @@ dwm.gappx:          50
 !dwm.normfgcolor:    #CFCFCF
 !dwm.selbgcolor:     #1565C0
 !dwm.selfgcolor:     #FEFEFE
-dwm.selbordercolor: #1565C0
+!dwm.selbordercolor: #1565C0
 
 !! URxvt
 URxvt.font:         xft:monospace:style=Bold:pixelsize=16
