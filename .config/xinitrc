@@ -2,7 +2,7 @@
 # All configurations will be sourced in .xprofile
 
 . ~/.xprofile
-
+source ~/.zshrc
 
 #exec dbus-launch i3
 exec dbus-launch dwm
