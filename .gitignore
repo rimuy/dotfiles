@@ -62,6 +62,7 @@
 ## Filter config files
 !.config/Xresources
 !.config/xinitrc
+!.config/aliases
 !.config/autostart.sh
 !.config/user-dirs.dirs
 

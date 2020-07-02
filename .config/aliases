@@ -1,0 +1,13 @@
+#!/bin/sh
+
+alias ls='ls --color'
+alias sudo='sudo '
+alias egrep='egrep --color'
+alias fgrep='fgrep --color'
+alias grep='grep --color'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+
+alias pq='pacman -Q'
+alias pql='pacman -Q | wc -l'
