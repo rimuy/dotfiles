@@ -1,40 +1,39 @@
 # Preview
-My Void Linux i3 desktop configuration.
+My Arch Linux dwm desktop configuration.
 
 ## Desktop
 ![Desktop](/.config/github/rice.png)
 
 #### Programs:
-* [neofetch](https://github.com/dylanaraps/neofetch)
-* [cmatrix](https://github.com/abishekvashok/cmatrix)
-* [alsamixer](https://github.com/gittup/alsa-utils/tree/gittup/alsamixer)
-* [ranger](https://github.com/ranger/ranger)
-
-# Dependencies
-
-## Required
-* [i3-gaps](https://github.com/Airblader/i3) - i3wm fork with gaps
-* [polybar](https://github.com/polybar/polybar) - Custom top bar
-* [compton](https://github.com/chjj/compton) - Compositor for X11
-* [dmenu](https://tools.suckless.org/dmenu/)
-
-## Optional
-* [node.js](https://github.com/nodejs/node) - JavaScript runtime (You must enable the "nodejs" polybar module)
-* [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) - Text Editor
+* [ranger](https://github.com/ranger/ranger) - File manager
+* [vim](https://github.com/neovim/neovim/wiki/Installing-Neovim) - Text Editor
 * [flameshot](https://github.com/lupoDharkael/flameshot) - Screenshot software
-* [nitrogen](https://github.com/l3ib/nitrogen/) - Background browser
+
+# Required
+
+## Dependencies
+* [dwm](https://dwm.suckless.org/) - Window manager
+* [dmenu](https://tools.suckless.org/dmenu/) - Search menu
+* [xcompmgr](https://www.archlinux.org/packages/?name=xcompmgr) - Compositor for X11
+* [libxft-gbra](https://aur.archlinux.org/packages/libxft-bgra) - for color emojis
+* [i3lock-color](https://www.archlinux.org/packages/community/x86_64/i3lock-color/) - i3 lock screen
+* [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) - Better lock screen (requires previous dependency)
+
+## Fonts
+* JoyPixels
+* Hack Nerd Font Mono
 
 # Installation
 ### curl
 ```bash
-curl -LJO https://github.com/Kevinwkz/dotfiles
+curl -LO https://kevinwkz.github.io/linux/installers/archrice
 ```
 
 ### wget
 ```bash
-wget --no-check-certificate --content-disposition https://github.com/Kevinwkz/dotfiles
+wget --no-check-certificate --content-disposition https://kevinwkz.github.io/linux/installers/archrice
 ```
 
-Or you can just clone the repository.
-> You probabily won't need to compile any of the dependencies.
+Or you can clone the repository and do it manually.
+> You will need to compile suckless softwares.
 
