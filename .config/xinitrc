@@ -2,7 +2,9 @@
 # All configurations will be sourced in .xprofile
 
 . ~/.xprofile
-source ~/.zshrc
+. ~/.zshrc
+
+#sh ~/.config/polybar/launch.sh &
 
 #exec dbus-launch i3
 exec dbus-launch dwm
