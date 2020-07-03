@@ -27,11 +27,13 @@ My Arch Linux dwm desktop configuration.
 ### curl
 ```bash
 curl -LO https://kevinwkz.github.io/linux/installers/archrice
+cd archrice/ && ./build
 ```
 
 ### wget
 ```bash
 wget --no-check-certificate --content-disposition https://kevinwkz.github.io/linux/installers/archrice
+cd archrice/ && ./build
 ```
 
 Or you can clone the repository and do it manually.
