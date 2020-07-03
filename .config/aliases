@@ -8,6 +8,7 @@ alias grep='grep --color'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
+alias neofetch='clear && neofetch'
 
 alias pq='pacman -Q'
 alias pql='pacman -Q | wc -l'
