@@ -12,23 +12,27 @@ static const char dmenufont[]        =  "monospace:size=10";
 static const char terminalfont[]     =  "monospace:style=Bold:size=10";
 static char normbgcolor[]            =  "#222222";
 static char normbordercolor[]        =  "#444444";
-static char normfgcolor[]            =  "#cbcbcb";
-static char selfgcolor[]             =  "#0088cc";
+static char normfgcolor[]            =  "#eeeeee";
+static char normtagscolor[]          =  "#917e7e";
+static char selfgcolor[]             =  "#fefefe";
 static char selbgcolor[]             =  "#222222";
-static char selbordercolor[]         =  "#5da3c6";
+static char selbordercolor[]         =  "#ef9a9a";
+static char seltagsfgcolor[]         =  "#ef9a9a";
+static char seltagsbgcolor[]         =  "#555555";
 static char *colors[][4] = {
     /*               fg           bg           border,          float   */
-    [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor, normbordercolor },
-    [SchemeSel]  = { "#fefefe",  selbgcolor,  selbordercolor,  selbgcolor },
-    [SchemeStatus]  = { normfgcolor, normbgcolor,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
-    [SchemeTagsSel]  = { "#fefefe", "#555555",  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
-    [SchemeTagsNorm]  = { normfgcolor, normbgcolor,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-    [SchemeInfoSel]  = { selfgcolor, selbgcolor,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
-    [SchemeInfoNorm]  = { normfgcolor, normbgcolor,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+    [SchemeNorm] = { seltagsfgcolor, normbgcolor, normbordercolor, normbordercolor },
+    [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor,  selbgcolor },
+    [SchemeStatus]  = { seltagsfgcolor, normbgcolor,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+    [SchemeTagsSel]  = { seltagsfgcolor, seltagsbgcolor,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+    [SchemeTagsNorm]  = { normtagscolor, normbgcolor,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+    [SchemeInfoSel]  = { seltagsfgcolor, selbgcolor,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+    [SchemeInfoNorm]  = { seltagsfgcolor, normbgcolor,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "ﴔ", "", "", "", "", "" };
+static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -123,7 +127,8 @@ static Key keys[] = {
     { MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-	TAGKEYS(                        XK_1,                      0)
+    { MODKEY,                       XK_n,      togglealttag,   {0} },
+    TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
 	TAGKEYS(                        XK_4,                      3)
