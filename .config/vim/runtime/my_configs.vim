@@ -10,9 +10,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='codedark'
 colorscheme gruvbox
 
-set t_Co=256
-set t_ut=
-
 set number
 set relativenumber
 set wrap
