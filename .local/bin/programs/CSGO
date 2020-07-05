@@ -1,0 +1,3 @@
+#!/bin/sh
+
+steam steam://rungameid/730 & >/dev/null 2>&1

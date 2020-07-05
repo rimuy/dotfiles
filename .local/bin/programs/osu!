@@ -1,0 +1,14 @@
+#!/bin/sh
+export vblank_mode=0
+export WINEPREFIX=$HOME/.local/share/wineprefixes/osu
+#export STAGING_AUDIO_DURATION=10000 # As low as you can get osu! stable with
+#export WINENOPULSE=1
+
+# Arch Linux/wine-osu users should uncomment next line
+# for the patch to be effective
+# export PATH=$PATH:/opt/wine-osu/bin
+
+cd $HOME/osu! # Or wherever you installed osu! in
+WINE_RT=89 WINE_SRV_RT=99 STAGING_RT_PRIORITY_SERVER=99 STAGING_RT_PRIORITY_BASE=99
+STAGING_SHARED_MEMORY=1 gamemoderun wine osu! "$@" & pkill explorer.exe
+
