@@ -1,10 +1,11 @@
 # Preview
-My Arch Linux dwm desktop configuration.
+My Arch Linux configuration. Note that the rice installer **ONLY** works for Arch,
+You will need to install it [the manual way](https://github.com/Kevinwkz/dotfiles/wiki) if you don't use the distro.
 
 ## Desktop
 ![Desktop](/.config/github/rice.png)
 
-#### Programs:
+#### Programs used:
 * [ranger](https://github.com/ranger/ranger) - File manager
 * [vim](https://github.com/neovim/neovim/wiki/Installing-Neovim) - Text Editor
 * [flameshot](https://github.com/lupoDharkael/flameshot) - Screenshot software
@@ -20,7 +21,7 @@ My Arch Linux dwm desktop configuration.
 * [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) - Better lock screen (requires previous dependency)
 
 ## Fonts
-* JoyPixels
+* Noto Color Emoji
 * Hack Nerd Font Mono
 
 # Installation
@@ -38,4 +39,3 @@ cd archrice/ && ./build
 
 Or you can clone the repository and do it manually.
 > You will need to compile suckless softwares.
-
