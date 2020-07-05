@@ -72,6 +72,8 @@
 .config/**/*.orig
 .config/**/*.rej
 
+.local/bin/powerline-*
+
 .local/share/applications/*.cache
 .local/share/applications/wine-*
 
