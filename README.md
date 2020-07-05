@@ -23,6 +23,7 @@ You will need to install it [the manual way](https://github.com/Kevinwkz/dotfile
 ## Fonts
 * Noto Color Emoji
 * Hack Nerd Font Mono
+* JetBrains
 
 # Installation
 ### curl
