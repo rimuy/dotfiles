@@ -7,7 +7,7 @@ static unsigned int snap             =  32;       /* snap pixel */
 static int showbar                   =  1;        /* 0 means no bar */
 static int topbar                    =  1;        /* 0 means bottom bar */
 static int user_bh                   =  24;       /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]           =  { "JetBrains Mono:size=10", "monospace:size=10", "JoyPixels:pixelsize=12", "Hack Nerd Font Mono:style=Regular:size=16" };
+static const char *fonts[]           =  { "JetBrains Mono:size=10", "monospace:size=10", "Noto Color Emoji:pixelsize=12", "Hack Nerd Font Mono:style=Regular:size=16" };
 static const char dmenufont[]        =  "monospace:size=10";
 static const char terminalfont[]     =  "monospace:style=Bold:size=10";
 static char normbgcolor[]            =  "#383c4a";
@@ -22,11 +22,11 @@ static char seltagsbgcolor[]         =  "#4b5162";
 static char *colors[][4] = {
     /*               fg           bg           border,          float   */
     [SchemeNorm] = { seltagsfgcolor, normbgcolor, normbordercolor, normbordercolor },
-    [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor,  selbgcolor },
+    [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor,  selbordercolor },
     [SchemeStatus]  = { seltagsfgcolor, normbgcolor,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
     [SchemeTagsSel]  = { seltagsfgcolor, seltagsbgcolor,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
     [SchemeTagsNorm]  = { normtagscolor, normbgcolor,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-    [SchemeInfoSel]  = { seltagsfgcolor, normbgcolor,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+    [SchemeInfoSel]  = { selfgcolor, seltagsfgcolor,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
     [SchemeInfoNorm]  = { seltagsfgcolor, normbgcolor,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
@@ -144,6 +144,7 @@ static Key keys[] = {
     { MODKEY|ControlMask,           XK_m,      spawn,          SHCMD(". ~/.local/bin/dmenumount") },
     { MODKEY|ControlMask,           XK_u,      spawn,          SHCMD(". ~/.local/bin/dmenuumount") },
     { MODKEY|ControlMask,           XK_p,      spawn,          SHCMD(". ~/.local/bin/dmenupower") },
+    { MODKEY/*|ControlMask*/,       XK_g,      spawn,          SHCMD(". ~/.local/bin/dmenugames") },
     /* THIRD PARTY SOFTWARES */
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = flameshot} },
     { MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l dimblur") },
