@@ -66,9 +66,12 @@
 !.config/autostart.sh
 !.config/user-dirs.dirs
 
-## Ignore these extensions in directories inside this directory [Suckless software]
+## Ignore these extensions in directories inside these directories
 .config/**/config.h
 .config/**/*.o
 .config/**/*.orig
 .config/**/*.rej
+
+.local/share/applications/*.cache
+.local/share/applications/wine-*
 
