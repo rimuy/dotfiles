@@ -1,6 +1,6 @@
 # Preview
 My Arch Linux configuration. Note that the rice installer **ONLY** works for Arch,
-You will need to install it [the manual way](https://github.com/Kevinwkz/dotfiles/wiki) if you don't use the distro.
+You will need to install it [the manual way](https://github.com/chocolattey/dotfiles/wiki) if you don't use the distro.
 
 ## Desktop
 ![Desktop](/.config/github/rice.png)
@@ -10,13 +10,16 @@ You will need to install it [the manual way](https://github.com/Kevinwkz/dotfile
 * [vim](https://github.com/neovim/neovim/wiki/Installing-Neovim) - Text Editor
 * [flameshot](https://github.com/lupoDharkael/flameshot) - Screenshot software
 
-# Required
+# Dependencies
 
-## Dependencies
+## Required
 * [dwm](https://dwm.suckless.org/) - Window manager
 * [dmenu](https://tools.suckless.org/dmenu/) - Search menu
-* [xcompmgr](https://www.archlinux.org/packages/?name=xcompmgr) - Compositor for X11
+* [xcompmgr](https://www.archlinux.org/packages/?name=xcompmgr) - compositor for X11
+* [ncurses](https://www.archlinux.org/packages/core/x86_64/ncurses/) - emulation library
 * [libxft-gbra](https://aur.archlinux.org/packages/libxft-bgra) - for color emojis
+
+## Optional
 * [i3lock-color](https://www.archlinux.org/packages/community/x86_64/i3lock-color/) - i3 lock screen
 * [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) - Better lock screen (requires previous dependency)
 
@@ -28,15 +31,13 @@ You will need to install it [the manual way](https://github.com/Kevinwkz/dotfile
 # Installation
 ### curl
 ```bash
-curl -LO https://kevinwkz.github.io/linux/installers/archrice
-cd archrice/ && ./build
+curl -o- https://chocolattey.github.io/linux/installers/archrice.sh | bash
 ```
 
 ### wget
 ```bash
-wget --no-check-certificate --content-disposition https://kevinwkz.github.io/linux/installers/archrice
-cd archrice/ && ./build
+wget -qO- https://chocolattey.github.io/linux/installers/archrice.sh | bash
 ```
 
-Or you can clone the repository and do it manually.
+Or you can clone the repository and do it [manually](https://github.com/chocolattey/dotfiles/wiki).
 > You will need to compile suckless softwares.
