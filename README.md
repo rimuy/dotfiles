@@ -18,15 +18,14 @@ You will need to install it [the manual way](https://github.com/chocolattey/dotf
 * [xcompmgr](https://www.archlinux.org/packages/?name=xcompmgr) - compositor for X11
 * [ncurses](https://www.archlinux.org/packages/core/x86_64/ncurses/) - emulation library
 * [libxft-gbra](https://aur.archlinux.org/packages/libxft-bgra) - for color emojis
+* Fonts
+  * Noto Color Emoji
+  * Hack Nerd Font Mono
+  * JetBrains (Terminal font)
 
 ## Optional
 * [i3lock-color](https://www.archlinux.org/packages/community/x86_64/i3lock-color/) - i3 lock screen
 * [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) - Better lock screen (requires previous dependency)
-
-## Fonts
-* Noto Color Emoji
-* Hack Nerd Font Mono
-* JetBrains
 
 # Installation
 ### curl
