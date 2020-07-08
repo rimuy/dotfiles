@@ -1,6 +1,5 @@
 # Preview
-My Arch Linux configuration. Note that the rice installer **ONLY** works for Arch,
-You will need to install it [the manual way](https://github.com/chocolattey/dotfiles/wiki) if you don't use the distro.
+My Arch Linux configuration.
 
 ## Desktop
 ![Desktop](/.config/github/rice.png)
@@ -30,13 +29,13 @@ You will need to install it [the manual way](https://github.com/chocolattey/dotf
 # Installation
 ### curl
 ```bash
-curl -o- https://chocolattey.github.io/linux/installers/archrice.sh | bash
+curl -o- https://nescauball.github.io/linux/installers/archrice.sh | sh
 ```
 
 ### wget
 ```bash
-wget -qO- https://chocolattey.github.io/linux/installers/archrice.sh | bash
+wget -qO- https://nescauball.github.io/linux/installers/archrice.sh | sh
 ```
 
-Or you can clone the repository and do it [manually](https://github.com/chocolattey/dotfiles/wiki).
+Or you can clone the repository and do it [manually](https://github.com/NescauBall/dotfiles/wiki).
 > You will need to compile suckless softwares.
