@@ -27,15 +27,5 @@ My Arch Linux configuration.
 * [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) - Better lock screen (requires previous dependency)
 
 # Installation
-### curl
-```bash
-curl -o- https://nescauball.github.io/linux/installers/archrice.sh | sh
-```
-
-### wget
-```bash
-wget -qO- https://nescauball.github.io/linux/installers/archrice.sh | sh
-```
-
-Or you can clone the repository and do it [manually](https://github.com/NescauBall/dotfiles/wiki).
+Clone the repository and do it manually.
 > You will need to compile suckless softwares.
