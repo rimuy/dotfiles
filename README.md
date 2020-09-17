@@ -1,5 +1,11 @@
-# Preview
-My Arch Linux configuration.
+# Dots
+[![Dwm AUR Version](https://img.shields.io/aur/version/dwm?style=plastic)](https://dwm.suckless.org/)
+[![Dmenu Package Version](https://img.shields.io/archlinux/v/community/x86_64/dmenu?style=plastic)](https://tools.suckless.org/dmenu/)
+[![Last Commit](https://img.shields.io/github/last-commit/Kevinwkz/dotfiles/master?style=plastic)](https://github.com/Kevinwkz/dotfiles/commits)
+[![Languages](https://img.shields.io/github/languages/count/Kevinwkz/dotfiles?style=plastic)](https://github.com/Kevinwkz/dotfiles/search?l=Shell)
+![Repository Size](https://img.shields.io/github/repo-size/Kevinwkz/dotfiles?style=plastic)
+
+My Arch Linux configuration. Made a custom theme using suckless's dynamic window manager.
 
 ## Desktop
 ![Desktop](/.config/github/rice.png)
