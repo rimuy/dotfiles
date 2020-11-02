@@ -10,4 +10,4 @@ xset r rate 300 50
 sh ~/.config/autostart.sh &
 feh --bg-fill --randomize ~/.local/share/wallpapers/* # For Wallpapers
 
-source ~/.config/fish/fishrc # Load fishrc
+source ~/.zshrc # Load zsh
